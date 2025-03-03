@@ -11,7 +11,7 @@ public class Main {
 
         // takes name input from the keyboard
         System.out.print("Enter calculation type: ");
-        String calcType = input.nextLine();
+        String calcType = input.nextLine().toLowerCase();
 
         // takes number input from the keyboard
         System.out.print("Enter first number: ");
@@ -22,7 +22,7 @@ public class Main {
 
         int result =  calculator.doCalculation(calcType, number, number2);
 
-        System.out.println("You asked to: " + calcType);
+
         System.out.println("The result of the calculation is " + result);
 
         // closes the scanner
